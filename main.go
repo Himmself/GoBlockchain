@@ -2,15 +2,12 @@ package main
 
 import (
 	"fmt"
+	"./oop/transaction"
 )
 
-type Block struct {
-	timeStamp		string
-	nonce			float64
-	previousHash	string
-	
-}
-
 func main() {
-	fmt.Println("Hello World")
+	fmt.Println("Starting Program")
+
+	test := transaction.New("Bob", "Phil", 57000)
+	fmt.Println(test.From)
 }
